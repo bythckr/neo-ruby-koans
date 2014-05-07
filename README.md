@@ -1,6 +1,6 @@
 ### Ruby Koans
 
-An exercise in test-driven proof of knowledge of Ruby fundamentals.
+An exercise in test-driven proof of knowledge of Ruby fundamentals. There are 282 unit and functional tests.
 
 #### What are Ruby koans?
 
