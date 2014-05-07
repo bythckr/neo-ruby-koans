@@ -14,12 +14,17 @@
 #   about_triangle_project_2.rb
 #
 def triangle(a, b, c)
-  equal_sides = [ (a==b), (b==c), (c==a) ].select { |side| side}
+  x,y,z = [a,b,c].sort
+  raise TriangleError, "negative sides" if [x,y,z].min <= 0
+  raise TriangleError, "hypotenuse cannot be greater than sum of legs" if x+y<=z
+
+  equal_sides = [ (x==y), (y==z), (z==x) ].select { |side| side}
 
   case equal_sides.size
   when 0 then :scalene
   when 1 then :isosceles
   when 3 then :equilateral
+  else raise TriangleError, "general triangle error"
   end
 end
 
