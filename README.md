@@ -4,6 +4,7 @@ An exercise in test-driven proof of knowledge of Ruby fundamentals. There are 28
 
 #### What are Ruby koans?
 
+
 From [RubyKoans.com](http://rubykoans.com):
 
 > The koans are broken out into areas by file, hashes are covered in about_hashes.rb, modules are introduced in about_modules.rb, etc. They are presented in order in the path_to_enlightenment.rb file.
